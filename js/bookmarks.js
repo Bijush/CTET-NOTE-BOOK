@@ -51,7 +51,7 @@ function getBookmarks() {
   }
 }
 
-const bookmarks = getBookmarks();
+
 
 const subjectSelect =
   document.getElementById("filterSubject");
@@ -75,6 +75,7 @@ uniqueSubjects.forEach(sub => {
    ❌ NO BOOKMARK
 ====================== */
 function renderBookmarks() {
+   const bookmarks = getBookmarks();
 
   const typeFilter =
     document.getElementById("filterType")?.value || "ALL";
