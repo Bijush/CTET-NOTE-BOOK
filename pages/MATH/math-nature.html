@@ -3,7 +3,8 @@
 <head>
 
 <meta charset="UTF-8">
-<title>Learning Resources & TLM – Mathematics</title>
+
+<title>Math</title>
 
 <meta name="viewport"
       content="width=device-width, initial-scale=1">
@@ -26,7 +27,7 @@ HEADER
     ⬅
   </button>
 
-  <h2>Learning Resources & TLM in Mathematics</h2>
+  <h2>Nature & Philosophy of Mathematics</h2>
 
 </div>
 
@@ -45,29 +46,43 @@ BOTTOM NAV GLASS TABS
 <div class="bottom-tabs">
 
   <button class="btab active"
-          onclick="openTab('tlm', event)">
+          onclick="openTab('definition', event)">
     <span>📘</span>
-    <label>TLM</label>
+    <label>Def</label>
   </button>
 
   <button class="btab"
-          onclick="openTab('mathlab', event)">
-    <span>🧪</span>
-    <label>Math Lab</label>
+          onclick="openTab('aims', event)">
+    <span>🧠</span>
+    <label>Aims</label>
   </button>
 
   <button class="btab"
-          onclick="openTab('ict', event)">
-    <span>💻</span>
-    <label>ICT</label>
+          onclick="openTab('values', event)">
+    <span>👩‍🏫</span>
+    <label>Values</label>
   </button>
 
   <button class="btab"
-          onclick="openTab('manipulatives', event)">
-    <span>🔢</span>
-    <label>Manipulatives</label>
+          onclick="openTab('correlation', event)">
+    <span>📊</span>
+    <label>Correlation</label>
   </button>
+<!-- Teaching -->
+<button class="btab"
+        onclick="openTab('daily-life', event)">
+  <span>👩‍🏫</span>
+  <label>daily-life</label>
+</button>
 
+<!-- Piaget MCQ -->
+<button class="btab"
+        onclick="goErikson(event)">
+
+  <span>🧠</span>
+  <label>erikson MCQ</label>
+
+</button>
 </div>
 
 <!-- ======================
@@ -75,12 +90,9 @@ SCRIPT
 ====================== -->
 
 <script type="module"
-        src="../js/math-tlm.js">
+        src="../js/math-nature.js">
 </script>
-
-<script defer
-        src="../js/progress-tracker.js">
-</script>
+<script defer src="../js/progress-tracker.js"></script>
 
 </body>
 </html>
