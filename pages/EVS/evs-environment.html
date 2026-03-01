@@ -3,8 +3,7 @@
 <head>
 
 <meta charset="UTF-8">
-
-<title>EVS – NCERT</title>
+<title>EVS – Environmental Themes</title>
 
 <meta name="viewport"
       content="width=device-width, initial-scale=1">
@@ -27,7 +26,7 @@ HEADER
     ⬅
   </button>
 
-  <h2>🌿 EVS – NCERT (Class 3–5)</h2>
+  <h2>🌍 Environmental Themes</h2>
 
 </div>
 
@@ -36,7 +35,8 @@ PAGE CONTENT
 ====================== -->
 
 <div id="theoryBox"
-     class="tab-page">
+     class="tab-page fade-in"
+     data-tab="pollution">
 </div>
 
 <!-- ======================
@@ -46,29 +46,33 @@ BOTTOM NAV GLASS TABS
 <div class="bottom-tabs">
 
   <button class="btab active"
-          onclick="openTab('class3', event)">
-    <span>📘</span>
-    <label>Class 3</label>
+          onclick="openTab('pollution', event)">
+    <span>🌫</span>
+    <label>Pollution</label>
   </button>
 
   <button class="btab"
-          onclick="openTab('class4', event)">
-    <span>📗</span>
-    <label>Class 4</label>
+          onclick="openTab('forest', event)">
+    <span>🌳</span>
+    <label>Forest</label>
   </button>
 
   <button class="btab"
-          onclick="openTab('class5', event)">
-    <span>📕</span>
-    <label>Class 5</label>
+          onclick="openTab('water', event)">
+    <span>💧</span>
+    <label>Water</label>
   </button>
 
+  <button class="btab"
+          onclick="openTab('climate', event)">
+    <span>🌍</span>
+    <label>Climate</label>
+  </button>
   <button class="btab"
           onclick="goEvsMcq(event)">
     <span>📝</span>
     <label>EVS MCQ</label>
   </button>
-
 </div>
 
 <!-- ======================
@@ -76,11 +80,24 @@ SCRIPT
 ====================== -->
 
 <script type="module"
-        src="../../js/evs/evs-ncert.js">
+        src="../../js/evs/evs-environment.js">
 </script>
 
 <script defer
         src="../../js/progress-tracker.js">
+</script>
+
+<script>
+/* ======================
+GO BACK
+====================== */
+function goBack(){
+  if(document.referrer){
+    history.back();
+  }else{
+    window.location.replace("../evs.html");
+  }
+}
 </script>
 
 </body>
