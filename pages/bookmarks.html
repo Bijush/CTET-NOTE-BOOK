@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bookmarks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/bookmark.css">
+</head>
+<body>
+<button class="back-btn" onclick="history.back()" aria-label="Back">
+  <!-- SVG Back Icon -->
+  <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+    <path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+
+<h2 style="text-align:center;">⭐ Bookmarks</h2>
+<div class="filter-box">
+
+  <!-- Type Filter -->
+  <select id="filterType">
+    <option value="ALL">All Types</option>
+    <option value="MCQ">MCQ</option>
+    <option value="MOCK">MOCK</option>
+    <option value="CONCEPT">CONCEPT</option>
+  </select>
+
+  <!-- Subject Filter -->
+  <select id="filterSubject">
+    <option value="ALL">All Subjects</option>
+  </select>
+
+  <!-- Sort -->
+  <select id="sortBy">
+    <option value="LATEST">Latest First</option>
+    <option value="OLDEST">Oldest First</option>
+  </select>
+
+</div>
+
+<div id="list"></div>
+
+<script type="module" src="../js/bookmarks.js"></script>
+</body>
+</html>

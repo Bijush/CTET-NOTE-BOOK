@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width,initial-scale=1.0">
+
+<title>Subjects</title>
+<link rel="stylesheet"
+      href="../css/common.css">
+<link rel="stylesheet"
+      href="../css/subject-list.css">
+</head>
+<body>
+
+<!-- ======================
+GLASS HEADER
+====================== -->
+
+<!-- ======================
+PREMIUM HEADER
+====================== -->
+
+<div class="header">
+
+  <div class="header-left"
+       onclick="history.back()">
+    ⬅
+  </div>
+
+  <div class="header-title">
+    📘 Concept Subjects
+  </div>
+
+</div>
+
+<!-- ======================
+TABS
+====================== -->
+
+<div class="tabs">
+
+<button class="tab active"
+onclick="changeSubject(event,'CDP')">
+CDP
+</button>
+
+<button class="tab"
+onclick="changeSubject(event,'MATH')">
+MATH
+</button>
+
+<button class="tab"
+onclick="changeSubject(event,'EVS')">
+EVS
+</button>
+
+<button class="tab"
+onclick="changeSubject(event,'ENGLISH')">
+ENGLISH
+</button>
+
+<button class="tab"
+onclick="changeSubject(event,'BENGALI')">
+BENGALI
+</button>
+
+</div>
+
+<!-- TITLE -->
+
+<div id="subjectTitle">
+Loading…
+</div>
+
+<!-- LIST -->
+
+<div id="conceptList">
+Loading concepts…
+</div>
+
+<!-- PREMIUM FOOTER -->
+<div class="premium-footer">
+
+  <div class="footer-item active"
+       onclick="location.href='dashboard.html'">
+    🏠
+    <span>Home</span>
+  </div>
+
+  <div class="footer-item"
+       onclick="location.href='subject-list.html'">
+    📘
+    <span>Concept</span>
+  </div>
+
+  <div class="footer-item"
+       onclick="location.href='test.html'">
+    📝
+    <span>Test</span>
+  </div>
+
+  <div class="footer-item"
+       onclick="location.href='profile.html'">
+    👤
+    <span>Profile</span>
+  </div>
+
+</div>
+<script>
+const path = location.pathname;
+
+document.querySelectorAll(".footer-item")
+.forEach(item=>{
+  if(item.getAttribute("onclick")
+    .includes(path.split("/").pop())){
+      item.classList.add("active");
+  }
+});
+</script>
+
+
+<script src="../js/subject-list.js"></script>
+
+</body>
+</html>
