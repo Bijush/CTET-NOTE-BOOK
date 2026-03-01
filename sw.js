@@ -4,7 +4,7 @@
 // ===============================
 
 // 🔁 CHANGE VERSION EVERY UPDATE
-const CACHE_VERSION = "ctet-app-v3";
+const CACHE_VERSION = "ctet-app-v7";
 
 // Static cache name
 const STATIC_CACHE = CACHE_VERSION;
