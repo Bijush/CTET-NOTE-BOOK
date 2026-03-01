@@ -4,8 +4,7 @@ import { conceptCDP } from "../data/concept_cdp.js";
 import { conceptMath } from "../data/concept_math.js";
 import { conceptEVS } from "../data/concept_evs.js";
 import { detectTraps } from "../utils/trap_detector.js";
-import { piagetMcq } 
-from "../data/piaget_mcq_question.js";
+import { piagetMcq } from "../data/piaget_mcq_question.js";
 import { TAptitude } from "../data/scert/teaching-aptitude.js";
 
 const list = document.getElementById("list");
